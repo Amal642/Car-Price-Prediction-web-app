@@ -2,6 +2,8 @@ import numpy as np
 from flask import Flask, request, render_template
 import pickle
 
+#new
+
 app = Flask(__name__)
 model = pickle.load(open('regressor.pkl', 'rb'))
 lb = pickle.load(open('lb', 'rb'))
